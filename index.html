@@ -71,29 +71,25 @@
         <div class="container">
           <div class="search-wrapper">
             <h1 class="title">Russian Train Tickets</h1>
-            <form class="form" id="search-form" method="POST" action="">
+            <form class="form" id="search-form" method="POST" action="./script.php">
               <div class="form__inner">
                 <div class="form__row">
                   <label class="form__label form__label_depart"><span class="input-title">Departure city:</span>
-                    <input class="input" type="text" name="departureCity" placeholder="Type city name">
-                    <div class="input-subtitle"> <span>Ex:</span>
+                    <input class="input" type="text" name="departureCity" placeholder="Type city name"><span class="input-subtitle"> <span>Ex:</span>
                       <ul class="input-subtitle__list">
                         <li class="input-subtitle__item"><a class="input-subtitle__link" href="">St. Petersburg</a></li>
                         <li class="input-subtitle__item"><a class="input-subtitle__link" href="">Moscow</a></li>
-                      </ul>
-                    </div>
+                      </ul></span>
                   </label><a class="swap-direction" href="">
                     <svg class="svg-swap" width="30px" height="16px">
                       <use xlink:href="./assets/images/sprites/sprite.svg#swap"></use>
                     </svg></a>
                   <label class="form__label form__label_return"><span class="input-title">Arrival city:</span>
-                    <input class="input" type="text" name="arrivalCity" placeholder="Type city name">
-                    <div class="input-subtitle"> <span>Ex:</span>
+                    <input class="input" type="text" name="arrivalCity" placeholder="Type city name"><span class="input-subtitle"> <span>Ex:</span>
                       <ul class="input-subtitle__list">
                         <li class="input-subtitle__item"><a class="input-subtitle__link" href="">St. Petersburg</a></li>
                         <li class="input-subtitle__item"><a class="input-subtitle__link" href="">Moscow</a></li>
-                      </ul>
-                    </div>
+                      </ul></span>
                   </label>
                 </div>
                 <div class="form__row">
@@ -103,17 +99,14 @@
                       <svg class="svg-calendar" width="26px" height="26px">
                         <use xlink:href="./assets/images/sprites/sprite.svg#calendar"></use>
                       </svg>
-                    </div>
-                    <div class="calendar" id="depart-date-wr"></div>
+                    </div><span class="calendar" id="depart-date-wr"></span>
                   </label>
                   <div class="roundtrip">
                     <label class="roundtrip__label">
-                      <input class="roundtrip__checkbox" type="checkbox" name="roundtrip">
-                      <div class="icon-box">
+                      <input class="roundtrip__checkbox" type="checkbox" name="roundtrip"><span class="icon-box">
                         <svg class="svg-check" width="11px" height="9px">
                           <use xlink:href="./assets/images/sprites/sprite.svg#check"></use>
-                        </svg>
-                      </div><span class="checkbox__title">Roundtrip</span>
+                        </svg></span><span class="checkbox__title">Roundtrip</span>
                     </label>
                   </div>
                   <label class="form__label form__label_date"><span class="input-title">Return date:</span>
@@ -125,10 +118,9 @@
                     </div>
                     <div class="calendar" id="return-date-wr"></div>
                   </label>
-                  <label class="form__select"><span class="input-title">Currency</span>
-                    <div class="select-currency">
+                  <label class="form__select"><span class="input-title">Currency</span><span class="select-currency">
                       <select name="currency" id="currency" style="width:5.375rem">
-                        <option value=""></option>
+                        <option value="">&nbsp;</option>
                         <option value="USD">USD</option>
                         <option value="Rub" selected="selected">Rub</option>
                         <option value="GBR">GBR</option>
@@ -137,9 +129,7 @@
                       </select>
                       <div class="select-js-unload">
                         <div class="select-button"></div>
-                      </div>
-                    </div>
-                  </label>
+                      </div></span></label>
                   <div class="button-search-wrapper">
                     <button class="button-search" type="submit" id="search-submit">
                       <svg class="svg-search" width="18px" height="18px">
